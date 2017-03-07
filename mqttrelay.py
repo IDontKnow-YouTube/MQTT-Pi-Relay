@@ -41,11 +41,11 @@ def main():
 			#print "Outlet 2 Off"
 	if msg.topic == "/home/test/3" :
 		if msg.payload == "ON" :
-			GPIO.output(17, GPIO.LOW)
+			GPIO.output(4, GPIO.LOW)
 			time.sleep(SleepTimeL);
 			#print "Outlet 3 ON"
 		if msg.payload == "OFF" :
-			GPIO.output(17, GPIO.HIGH)
+			GPIO.output(4, GPIO.HIGH)
 			time.sleep(SleepTimeL);
 			#print "Outlet 3 OFF"
 	if msg.topic == "/home/test/4" :
